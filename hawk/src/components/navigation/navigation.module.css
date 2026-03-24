@@ -1,0 +1,74 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+    padding-bottom: 0px;
+    height: 101px;
+    margin-left: -92px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 28px;
+    padding-left: 100px;
+}
+ul li a {
+    position: relative; 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Titillium Web", sans-serif;
+    word-spacing: 1px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    height: 2px;
+    width: 0%;
+    background: red;
+    transition: width 0.3s ease;
+    display: block;
+}
+
+ul li a:hover {
+    color: red;
+    text-decoration: none;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+button{
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+    background-color: darkred;
+    transition: all 2s ease;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}

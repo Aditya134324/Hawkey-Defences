@@ -1,0 +1,73 @@
+.section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 50px;
+    text-align: left;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: bold;
+    margin-left: -170px;
+    z-index: 1;   /* ✅ ADDED */
+}
+
+strong{
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+}
+
+pre{
+    color: red;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    margin-left: -20px;
+}
+
+.section .p1{
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.section .p1:hover{
+    color: red;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    background: linear-gradient(to left, red 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.3s ease;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+/* ✅ FIXED (only change here) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;   /* ❌ was 1 → ✅ now fixed */
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
