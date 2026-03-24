@@ -5,6 +5,11 @@ html, body {
   padding: 0;
 }
 
+#root,
+.App {
+  min-height: 200vh;
+}
+
 .myVideo {
   position: fixed;
   top: 0;

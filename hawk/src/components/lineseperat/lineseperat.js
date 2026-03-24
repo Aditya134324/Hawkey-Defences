@@ -13,9 +13,7 @@ function myFunction() {
     <>
        <div className="header, hidden">
   <div className="progress-container">
-    <div className="progress-bar" id="myBar">
-        <img src='/assets/icons8-fighter-jet-30.png' alt="fighter jet"/>
-    </div>
+    <div className="progress-bar" id="myBar"></div>
   </div>  
   </div>
     </>

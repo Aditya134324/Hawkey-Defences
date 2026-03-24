@@ -9,7 +9,7 @@
     font-family: "Titillium Web", sans-serif;
     font-weight: bold;
     margin-left: -170px;
-    z-index: 1;   /* ✅ ADDED */
+    z-index: 1;  
 }
 
 strong{
@@ -17,7 +17,7 @@ strong{
     -webkit-text-fill-color: transparent;
 }
 
-pre{
+.stripes{
     color: red;
     font-size: 30px;
     margin: 0;
@@ -51,11 +51,29 @@ pre{
   padding-top: 80px;
 }
 
-/* ✅ FIXED (only change here) */
+.planeTrack {
+  position: absolute;
+  margin-top: 12px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  overflow: hidden;
+  height: 30px;
+}
+
+.plane {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+
 .header {
   position: fixed;
   top: 0;
-  z-index: 1000;   /* ❌ was 1 → ✅ now fixed */
+  z-index: 1000;   
   width: 100%;
   background-color: #f1f1f1;
 }
