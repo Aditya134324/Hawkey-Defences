@@ -1,8 +1,8 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;          /* ✅ ensures it starts from left edge */
-  z-index: 1000;    /* ✅ keeps it above hero */
+  top:0;
+  left: 0;          
+  z-index: 1000;   
   width: 100%;
   background-color: #f1f1f1;
 }
@@ -17,4 +17,5 @@
   height: 8px;
   background: #04AA6D;
   width: 0%;
+  border-width: 1px;
 }

@@ -1,8 +1,8 @@
 import './App.css';
 import { useEffect } from 'react';
 import Navigation from './components/navigation/navigation';
-import PageHero from './components/mainpagehero/pagehero';
-import Lineseperat from './components/lineseperat/lineseperat';
+import { Routes, Route } from 'react-router-dom';
+import Home from './home';
 
 function App() {
   useEffect(() => {
@@ -34,8 +34,11 @@ function App() {
       </video>
 
       <Navigation />  
-      <PageHero />     
-      <Lineseperat />  
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+     
     </div>
   );
 }

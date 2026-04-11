@@ -1,11 +1,27 @@
- .box{
-height: 100px;
-width: 100px;
-background-color: white;
-border:black solid 1px;
+.container{
+ margin-top: 90vh;
+ position: absolute;
+ background-color: white;
+ width: 100%;
+ font-family: "Titillium Web", sans-serif;
 
 }
-.box:hover{
-background-color: black;
-transition: 0.5s ease;
+.heading{
+    font-size: 50px;
+    padding-left:60px;
+    margin: 0;
+    color:black;
+    font-weight: 900;
 }
+.paragraph{
+    font-size: 20px;
+    color:black;
+    font-weight:bold;
+    padding-left: 60px;
+}
+.list{
+    padding-left: 60px;
+    color:black;
+    list-style: none;
+    margin: 20px 0;
+}   

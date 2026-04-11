@@ -1,12 +1,14 @@
-.nav{
+.nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:transparent;
+    background-color: transparent;
     padding-bottom: 0px;
     height: 101px;
     margin-left: -92px;
 }
+
+
 ul {
     list-style: none;
     display: flex;
@@ -15,8 +17,10 @@ ul {
     padding: 28px;
     padding-left: 100px;
 }
-ul li a {
-    position: relative; 
+
+
+.link {
+    position: relative;
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -27,7 +31,8 @@ ul li a {
     box-sizing: border-box;
 }
 
-ul li a::after {
+
+.link::after {
     content: "";
     position: absolute;
     left: 0;
@@ -39,35 +44,37 @@ ul li a::after {
     display: block;
 }
 
-ul li a:hover {
+.link:hover {
     color: red;
-    text-decoration: none;
-    transition: all 0.1s ease;
     cursor: pointer;
 }
 
-ul li a:hover::after {
+
+.link:hover::after {
     width: 100%;
 }
-button{
+
+
+.btn {
     padding: 10px 20px;
     background-color: red;
     color: white;
     border: none;
-    cursor: pointer;
     font-family: "Titillium Web", sans-serif;
     font-size: 16px;
-}
-button a{
     text-decoration: none;
-    color: white;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
-button:hover{
+
+
+.btn:hover {
     background-color: darkred;
-    transition: all 2s ease;
     border-radius: 50px;
     cursor: pointer;
 }
+
+
 .logo {
     width: 100px;
     height: auto;

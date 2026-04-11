@@ -1,55 +1,50 @@
 .section{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:white;
-    font-size: 50px;
+    left: 60px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 70px;
     text-align: left;
     font-family: "Titillium Web", sans-serif;
-    font-weight: bold;
-    margin-left: -170px;
-    z-index: 1;  
+    font-weight: 900;
+    z-index: 1;
 }
 
-strong{
+
+.line{
+    line-height: 1.2;
+}
+
+
+.outline{
     -webkit-text-stroke: 1px white;
     -webkit-text-fill-color: transparent;
 }
 
-.stripes{
-    color: red;
-    font-size: 30px;
-    margin: 0;
-    padding: 0;
-    margin-left: -20px;
-}
 
-.section .p1{
+.p1{
     font-size: 15px;
     font-weight: normal;
     padding-bottom: 10px;
-    text-align: left;
 }
 
-.section .p1:hover{
+
+.stripes{
     color: red;
-    cursor: pointer;
-    transition: all 0.1s ease;
-    background: linear-gradient(to left, red 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: background-position 0.3s ease;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
 }
+
 
 .hero {
   position: relative;
   height: 100vh;
   padding-top: 80px;
+  
 }
+
 
 .planeTrack {
   position: absolute;
@@ -60,11 +55,11 @@ strong{
   height: 30px;
 }
 
+
 .plane {
   position: absolute;
   left: 0;
   top: 0;
-  display: block;
   width: 30px;
   height: 30px;
 }
@@ -73,7 +68,7 @@ strong{
 .header {
   position: fixed;
   top: 0;
-  z-index: 1000;   
+  z-index: 1000;
   width: 100%;
   background-color: #f1f1f1;
 }
@@ -88,4 +83,26 @@ strong{
   height: 8px;
   background: #04AA6D;
   width: 0%;
+}
+
+.p1 {
+  font-size: 15px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  color: white;
+
+  background: linear-gradient(to right, red 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: background-position 0.5s ease;
+}
+
+.p1:hover {
+  background-position: left bottom;
+  cursor: pointer;
 }
